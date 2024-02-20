@@ -1,0 +1,154 @@
+.Banner {
+    width: 100vw;
+    background-color: rgb(142, 181, 11);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+  }
+.phone{
+    padding: 25px 30px;
+    background-color: #252525;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 400;
+  
+    margin-left: 5%;
+  }
+.mail {
+    padding: 25px 30px;
+    background-color: #252525;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 400;
+  
+    margin-right: 5%;
+  }
+  .sideBar{
+    display: none;
+  }
+
+  .navBar{
+    width: 100vw;
+    /* height: 20vh; */
+    background-color: rgb(142, 181, 11);
+  
+  }
+  .navBar>*:hover{
+    cursor: pointer;
+  }
+  
+  
+  .navBar {
+    display: flex;
+    justify-content: center;
+    background: #252525;
+    font-size: 20px;
+    gap: 10%;
+    color: white;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    /* width: 60%; */
+  }
+  ul li{
+      padding: 20px 30px;
+      transition: 0.7s;
+  }
+  
+  
+  
+  .navBar ul li:hover {
+    color: #8eb50b;
+    text-decoration: underline;
+    text-decoration-color: rgb(142, 181, 11); /* Change 'red' to any color you want */
+  }
+  
+  
+  .search{
+    background-color:rgb(142, 181, 11);
+    position: relative;
+    align-items: center;
+    display: flex;
+  }
+  .search input {
+    border: none;
+    outline: none;
+    background-color: white;
+    padding: 15px 15px;
+    transition: 1s;
+  }
+  
+  .search button {
+    outline: none;
+    border: none;
+    background-color:  #8eb50b;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .login{
+      padding: 20px 30px;
+      transition: 0.7s;
+  }
+  .login:hover{
+    color: #8eb50b;
+    text-decoration: underline;
+    text-decoration-color: rgb(142, 181, 11)
+  }
+  
+
+
+  /* //-------------------------------REsponsive_Phone and Tablet------------------------------------------------// */
+  @media only screen and (max-width:1200px) {
+
+    .Banner{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    
+    .logo{
+      padding: 10px;
+    }
+    .sideBar{
+      display: block;
+      /* padding: 30px; */
+    }
+    .sideBar img{
+      padding: 10px;
+    }
+    .phone{
+      display: none;
+    }
+    .mail{
+      display: none;
+    }
+    .navBarHidden{
+      flex-direction: column;
+      position: relative;
+      left: -100%;
+      transition: 1s;
+    }
+    .navBarShown{
+      flex-direction: column;
+      position: relative;
+      left: 0;
+      transition: 1s;
+    }
+
+    .navBarShown ul{
+      flex-direction: column;
+      align-items: center;
+    }
+}
