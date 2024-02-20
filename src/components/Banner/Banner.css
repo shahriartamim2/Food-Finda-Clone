@@ -32,18 +32,18 @@
     display: none;
   }
 
-  .navBar{
+  .navBarHidden{
     width: 100vw;
     /* height: 20vh; */
     background-color: rgb(142, 181, 11);
   
   }
-  .navBar>*:hover{
+  .navBarHidden>*:hover{
     cursor: pointer;
   }
   
   
-  .navBar {
+  .navBarHidden  {
     display: flex;
     justify-content: center;
     background: #252525;
@@ -52,6 +52,7 @@
     color: white;
     align-items: center;
     padding: 10px;
+    transition: 1s;
   }
   
   ul {
@@ -67,7 +68,7 @@
   
   
   
-  .navBar ul li:hover {
+  .navBarHidden ul li:hover {
     color: #8eb50b;
     text-decoration: underline;
     text-decoration-color: rgb(142, 181, 11); /* Change 'red' to any color you want */
@@ -135,16 +136,20 @@
       display: none;
     }
     .navBarHidden{
-      flex-direction: column;
       position: relative;
-      left: -100%;
-      transition: 1s;
+      top: -200%;
+      display: none;
     }
     .navBarShown{
       flex-direction: column;
-      position: relative;
-      left: 0;
-      transition: 1s;
+      top: 0;
+      transition: 1s all;
+      color: white;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
     }
 
     .navBarShown ul{
