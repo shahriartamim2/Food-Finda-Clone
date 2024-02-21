@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import { useState } from 'react'
 import './Home.css'
 import search from '../assets/search.svg'

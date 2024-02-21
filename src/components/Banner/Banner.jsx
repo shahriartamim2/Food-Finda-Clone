@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import { useState } from 'react'
 import logo from '../assets/logo.png'
 import mail from '../assets/mail.svg'
@@ -41,12 +42,31 @@ const Banner = () => {
 
 <div className={isDropdown?'navBarShown' : 'navBarHidden'} >
 <ul >
-  <li>Home</li>
-  <li>Services</li>
-  <li>About</li>
-  <li>Blog</li>
-  <li>Shop</li>
-  <li>Contact</li>
+  <Link to="/" >
+      {" "}
+      <li>Home</li>
+  </Link>
+
+  <Link to="/services">
+      {" "}
+      <li>Services</li>
+  </Link>
+  <Link to="/about">
+      {" "}
+      <li>About</li>
+  </Link>
+  <Link to="/blog">
+      {" "}
+      <li>Blog</li>
+  </Link>
+  <Link to="/shop">
+      {" "}
+      <li>Shop</li>
+  </Link>
+  <Link to="/contact">
+      {" "}
+      <li>Contact</li>
+  </Link>
 </ul>
 <div className="search">
     <input type="text" />

@@ -1,0 +1,46 @@
+.services{
+    padding: 40px 40px 40px 30px ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    background: rgba(0,0,0, 0.75);
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+.card{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.image{
+    height: 150px;
+    width: 150px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card p{
+    font-size: 30px;
+}
+.more{
+    padding: 20px 30px;
+    font-size: 20px;
+    background-color: #8eb50b;
+    transition: 1s;
+}
+.more:hover{
+    background-color: orangered;
+}
